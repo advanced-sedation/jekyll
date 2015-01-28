@@ -1,0 +1,21 @@
+header {
+  @include grid-column(12);
+
+  position: relative;
+  img {
+    padding-right: rem-calc(1);
+  }
+
+  nav {
+    position: absolute;
+    bottom: 0;
+    right: rem-calc(24);
+    ul {
+      @include sub-nav();
+      li {
+        margin-left: auto;
+      }
+    }
+  }
+
+}

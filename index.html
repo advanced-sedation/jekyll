@@ -1,23 +1,91 @@
 ---
 layout: default
 ---
+<section class="banner">
+    {% include image_slider.html %}
+</section>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<section class="main">
+    <main>
+        <blockquote>
+            <q>Providing customized anesthesia plans for patients and dental practitioners</q>
+        </blockquote>
+        <section class="about-the-doctor">
+            <aside>
+                <img src="img/mendia.jpg">
+                <h1>
+                    Dentist Anesthesiologist
+                    <small>Dr. Jonathan Mendia, Dentist Anesthesiologist</small>
+                </h1>
+                Dr. Mendia offers safe and comfortable anesthesia services in the comfort of your dental practice.
+                Dr. Mendia has completed post-doctoral training in dental anesthesiology which included both hospital
+                and private practice ambulatory anesthesia. Through his training, Dr. Mendia has dealt hands on with
+                emergency medicine, pediatrics, special needs, obstetrics, ENT, Oral and Maxillofacial surgery, as
+                well as acute and chronic pain management.  In addition to the clinical experiences, Dr. Mendia
+                attended lectures and seminars to further expand his academic knowledge of anesthesia and how to
+                customize a treatment plan of anesthesia for each individual patient. Dr. Mendia works in the
+                offices of various dentists or can be contacted to come to an office of your choice.
+            </aside>
+            <aside>
+                <img src="img/stethoscope.jpeg">
+                <h1>
+                    Ambulatory Anesthesia
+                    <small>
+                        Evaluation and treatment of the full range surgery problems
+                    </small>
+                </h1>
+                Dr. Mendia is trained and certified in ambulatory anesthesia. He works in both dental practices and
+                with Rutgers University School of Dental Medicine. When he works in a private Dental practice he
+                provides all the necessary equipment, medications, and the most up-to date monitors to ensure an
+                unsurpassed margin of safety in the care of the dental patient.
+            </aside>
+        </section>
+        <hr>
+        <section class="additional-info">
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <address>
+                    Advanced Dental Anesthesia Services <br>
+                    48 BiState Plaza, PMB #268 <br>
+                    Old Tappan, NJ 07675 <br>
+                    <a href="tel:+12016607464">(201) 660-7464</a> <br>
+                    <a href="tel:+19175738855">(917) 573-8855</a> <br>
+                    <a href="mailto:info@advancedsedation.com">info@advancedsedation.com</a>
+                </address>
+            </div>
+            <div class="faq-info">
+                <h2>FAQ's</h2>
+                <dl>
+                    <dt>What is a dentist anesthesiologist?</dt>
+                    <dl>A dentist anesthesiologist is a dentist that has completed a post-doctoral residency in anesthesiology.</dl>
+                    <dt>Why is anesthesia necessary?</dt>
+                    <dl>Complex Dental cases, needle phobic or anxious patients, patients with special needs and children may require anesthesia.</dl>
+                    <dt>What is a dentist anesthesiologist?</dt>
+                    <dl>A dentist anesthesiologist is a dentist that has completed a post-doctoral residency in anesthesiology.</dl>
+                    <dt>Who do I contact with a billing question?</dt>
+                    <dl>A dentist anesthesiologist is a dentist that has completed a post-doctoral residency in anesthesiology.</dl>
+                </dl>
+            </div>
+            <div class="forms-info">
+                <h2>Forms</h2>
+                <ul>
+                    <li>
+                        <a href="/files/NewApptForm.pdf" target="_blank">New Appointment Form</a>
+                    </li>
+                    <li>
+                        <a href="/files/NewPatientForm.pdf.pdf" target="_blank">New Patient Form</a>
+                    </li>
+                    <li>
+                        <a href="/files/Consent-Form-ADAS.pdf.pdf" target="_blank">Consent Form</a>
+                    </li>
+                    <li>
+                        <a href="/files/Pre-Anesthesia-Instructions.pdf" target="_blank">Pre-Anesthesia Instructions</a>
+                    </li>
+                    <li>
+                        <a href="/files/Adult-Post-Op.pdf.pdf" target="_blank">Adult Post-Op</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</section>

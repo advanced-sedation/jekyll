@@ -1,0 +1,11 @@
+.slideshow-container {
+  @include grid-row();
+
+  .slideshow {
+    @include grid-column(
+      $columns: 12,
+      $center:true
+    );
+    margin-top: 30px;
+  }
+}
