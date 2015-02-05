@@ -40,13 +40,128 @@ $on-laptop:        800px;
     }
 }
 
+@mixin small-up {
+  @media #{$small-up} {
+    @content
+  }
+}
+@mixin small-only {
+  @media #{$small-only} {
+    @content
+  }
+}
+
+@mixin medium-up {
+  @media #{$medium-up} {
+    @content
+  }
+}
+@mixin medium-only {
+  @media #{$medium-only} {
+    @content
+  }
+}
+
+@mixin large-up {
+  @media #{$large-up} {
+    @content
+  }
+}
+@mixin large-only {
+  @media #{$large-only} {
+    @content
+  }
+}
+
+@mixin xlarge-up {
+  @media #{$xlarge-up} {
+    @content
+  }
+}
+@mixin xlarge-only {
+  @media #{$xlarge-only} {
+    @content
+  }
+}
+
+@mixin xxlarge-up {
+  @media #{$xxlarge-up} {
+    @content
+  }
+}
+@mixin xxlarge-only {
+  @media #{$xxlarge-only} {
+    @content
+  }
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
+@import "settings";
 @import "../bower_components/foundation/scss/foundation";
 @import "../bower_components/slick.js/slick/slick";
-@import "header";
 @import "slideshow";
 @import "quote";
+
+.top-navigation {
+//  @include grid-column(12);
+
+  position: relative;
+  @include medium-up {
+    height: rem-calc(82.5px);
+  }
+
+  .logo {
+    @include grid-column(3);
+    @include small-only {
+      position: relative;
+      img {
+        position: relative;
+        padding-right: 0;
+        max-width: 100%;
+        margin-top: .3rem;
+      }
+    }
+
+    img {
+      padding-right: rem-calc(1);
+      position: absolute;
+      z-index: 1000;
+
+    }
+  }
+
+  .navigation {
+    @include grid-column(9, true, false, 0, 3);
+
+  }
+
+
+  nav {
+    @include medium-up {
+      margin-top: 65px;
+      float: right;
+    }
+
+  }
+
+  .top-bar-section ul {
+    @include small-only {
+      padding-right: rem-calc(8);
+
+      li {
+        border-bottom: 1px solid #000000;
+        width: 75%;
+        text-align: center;
+
+        &:last-child {
+          border: none;
+        }
+
+      }
+    }
+  }
+}
+
 
 .banner {
   background: url('../img/slideshow_background.png');
@@ -54,6 +169,30 @@ $on-laptop:        800px;
   background-repeat: repeat-x;
   width: 100%;
   box-shadow: inset 0 .05em 1em;
+
+//  nav {
+//    @include grid-row();
+//    h1, p {
+//      color: #ffffff;
+//      text-decoration: none;
+//    }
+//    h1 {
+//      margin-bottom: 3px;
+//      font-size: rem-calc(24);
+//    }
+//  }
+  header {
+    @include grid-row();
+    h1 {
+      font-size: rem-calc(32);
+      color: #FFFFFF;
+      font-weight: 200;
+      padding-left: rem-calc(44);
+      letter-spacing: rem-calc(1);
+
+    }
+  }
+
 }
 
 .main, .top {
