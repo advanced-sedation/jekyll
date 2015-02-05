@@ -1,6 +1,11 @@
 <div class="slideshow-container">
     <div class="slideshow">
-        <div><img src="../img/patients1.jpg"><p>Test text for everyone!</p></div>
-        <div><img src="../img/patients2.jpg"></div>
+        {% for slide in site.data.sliders.home %}
+            <div>
+                <div class="highlight">
+                    <img src="../img/{{ slide.image.name }}" alt="{{ slide.image.alt }}">
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </div>

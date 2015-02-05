@@ -3,9 +3,30 @@
 
   .slideshow {
     @include grid-column(
-      $columns: 12,
-      $center:true
+    $columns: 12,
+    $center:true
     );
+
     margin-top: 30px;
   }
+}
+
+.highlight {
+  @include grid-row();
+
+  blockquote, blockquote + img {
+    @include grid-column(
+    $columns: 6,
+    $center:false
+    );
+
+  }
+  blockquote {
+    p, h1 {
+      color: #ffffff;
+    }
+  }
+
+
+
 }
