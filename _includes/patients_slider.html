@@ -1,0 +1,15 @@
+<div class="slideshow-container">
+    <div class="slideshow">
+        {% for slide in site.data.sliders.patients %}
+            <div>
+                <div class="highlight">
+                    <blockquote>
+                        <h1>{{ slide.caption.title }}</h1>
+                        <p>{{ slide.caption.body }}</p>
+                    </blockquote>
+                    <img src="../img/{{ slide.image.name }}" alt="{{ slide.image.alt }}">
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
