@@ -6,7 +6,7 @@
 <body class="advanced-sedation">
 
     <section class="top">
-      {% include header.html %}
+      {% include top-navigation.html %}
     </section>
 
     {{ content }}
@@ -14,16 +14,18 @@
     {% include footer.html %}
     <script src="../bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <script src="../bower_components/slick.js/slick/slick.min.js" type="text/javascript"></script>
+    <script src="../bower_components/foundation/js/foundation.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function(){
           $('.slideshow').slick({
               autoplay: true,
-              fade: true,
+              fade: false,
               cssEase: 'ease-in-out',
               speed: 500,
               dots: true,
               arrows: false
             });
+            $(document).foundation();
         });
     </script>
 
