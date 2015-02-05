@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@import "settings";
+
 
 
 
@@ -16,7 +16,8 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #284b80;
+$brand-color-light: #3E84BB;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -206,8 +207,7 @@ main {
 .about-the-doctor {
   @include grid-row();
 
-  aside {
-    @include grid-column(6);
+  article, aside {
     img {
       width: 125px;
       float: left;
@@ -219,17 +219,35 @@ main {
       font-size: rem-calc(18);
       padding-bottom: rem-calc(5);
       margin-bottom: rem-calc(2);
-      border-bottom: 1px solid #cccccc;
+      border-bottom: 1px solid #CCCCCC;
+      color: $brand-color;
       small {
         padding-top: rem-calc(6);
         display: block;
-        font-size: rem-calc(13);
-        color: #cccccc;
+        font-size: rem-calc(12);
+        color: #555555;
         line-height: rem-calc(16);
       }
     }
     font-size: rem-calc(13);
 
+  }
+  &> article {
+    @include small-up {
+      @include grid-column(12);
+    }
+    @include large-up {
+      @include grid-column(7);
+    }
+
+  }
+  &> aside {
+    @include small-up {
+      @include grid-column(12);
+    }
+    @include large-up {
+      @include grid-column(5);
+    }
   }
   margin-top: rem-calc(96);
 }
@@ -237,22 +255,140 @@ main {
 .additional-info {
   h2 {
     font-size: rem-calc(20);
+    color: $brand-color;
     text-align: center;
   }
   @include grid-row();
-  div {
+  &> article {
     font-size: rem-calc(13);
-    @include grid-column(4);
-    dl, ul, dd, dt {
-      font-size: rem-calc(13);
+    @include small-only {
+      @include grid-column(12);
     }
-    address {
-      text-align: center;
+    @include grid-column(7);
+  }
+  &> aside {
+    @include grid-column(5);
+    @include small-only {
+      @include grid-column(12);
     }
   }
 }
 
+.forms-info {
+  ul {
+    text-align: center;
+    margin-left: 0;
+    list-style-type: none;
+  }
+}
+
+.faq-info {
+  dd {
+    font-size: rem-calc(13);
+  }
+  dt {
+    font-size: rem-calc(16);
+  }
+}
+
+.contact-info {
+  address {
+    text-align: center;
+  }
+}
+
+.extra-care {
+  @include grid-row();
+  aside {
+    @include grid-column(4);
+    text-align: center;
+    p {
+      text-align: justify;
+    }
+  }
+  h3 {
+    color: $brand-color;
+  }
+}
+
+.section-heading {
+  clear: both;
+  margin-top: rem-calc(64);
+  margin-bottom: rem-calc(12);
+  color: $brand-color;
+  text-align: left;
+}
+
+.patients {
+  figure {
+    @include grid-row();
+    &> img {
+      @include grid-column(5);
+    }
+    &> figcaption {
+      @include grid-column(7);
+    }
+    h3 {
+      font-size: rem-calc(20);
+      color: $brand-color;
+    }
+
+    padding-bottom: rem-calc(24);
+  }
+}
+
+.doctor-photo {
+  float: left;
+  padding: rem-calc(24) rem-calc(24) rem-calc(24) 0;
+
+  &+ h2 {
+    padding-top: rem-calc(24);
+  }
+}
+
+.payments {
+  text-align: center;
+  dl {
+    text-align: left;
+  }
+  dt {
+    color: #FFFFFF;
+    margin-bottom: 0;
+    padding-bottom: rem-calc(2);
+    padding-left: rem-calc(10);
+    background-color: $brand-color-light;
+    font-weight: 200;
+    letter-spacing: rem-calc(1);
+
+  }
+  dd {
+    background-color: #DDDDDD;
+    padding: rem-calc(10);
+    color: #444444;
+
+  }
+  img {
+    margin-bottom: rem-calc(16);
+
+  }
+}
+
+dl {
+  h2 {
+    text-align: center;
+    margin: rem-calc(12) auto;
+  }
+}
+
+.read-more {
+  float: right;
+}
+
 footer {
+  margin-top: rem-calc(12);
   border-top: 1px solid #cccccc;
   text-align: center;
+  p {
+    font-size: rem-calc(12);
+  }
 }
