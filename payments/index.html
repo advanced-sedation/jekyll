@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<section class="banner">
+    <header><h1>Payments</h1></header>
+</section>
+<section class="main">
+    <main class="payments">
+        <h2 class="section-heading">{{ site.data.general.headings.payment.main }}</h2>
+        <hr>
+        <img src="../img/payments.png" alt="{{ site.data.general.headings.payment.main }}">
+        <dl>
+            {% for payment in site.data.payments %}
+                <dt>{{ payment.title }}</dt>
+                <dd>
+                    {% for paragraph in payment.paragraphs %}
+                        <p>{{ paragraph }}</p>
+                    {% endfor %}
+                </dd>
+            {% endfor %}
+        </dl>
+    </main>
+</section>

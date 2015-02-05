@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section class="banner">
+    {% include patients_slider.html %}
+</section>
+
+<section class="main">
+    <main>
+        <h2 class="section-heading">
+            {{ site.data.general.headings.patients.extra_care }}
+        </h2>
+        <hr>
+        <section class="extra-care">
+            {% for section in site.data.general.extra_care %}
+                <aside>
+                    <img src="../img/{{ section.image }}">
+                    <h3>
+                        {{ section.title }}
+                    </h3>
+                    <p>{{ section.body }}</p>
+                </aside>
+            {% endfor %}
+        </section>
+        <h2 class="section-heading">
+            {{ site.data.general.headings.patients.patient_types }}
+        </h2>
+        <hr>
+        <section class="patients">
+            {% for patient in site.data.patients %}
+                <figure>
+                    <img src="../img/{{ patient.image }}" alt="{{ patient.title }}"/>
+                    <figcaption>
+                        <h3>{{ patient.title }}</h3>
+                        <p>{{ patient.description }}</p>
+                    </figcaption>
+                </figure>
+            {% endfor %}
+        </section>
+    </main>
+</section>

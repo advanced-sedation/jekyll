@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<section class="banner">
+    <header><h1>FAQ</h1></header>
+</section>
+<section class="main">
+    <main>
+        <h2 class="section-heading">{{ site.data.general.headings.faq.main }}</h2>
+        <hr>
+        <dl>
+            {% for question in site.data.faq %}
+                {% if question.preview_id %}
+                    <dt id="{{ question.preview_id }}">{{ question.question }}</dt>
+                {% else %}
+                    <dt>{{ question.question }}</dt>
+                {% endif %}
+                <dd>{{ question.answer }}</dd>
+            {% endfor %}
+        </dl>
+
+
+    </main>
+</section>

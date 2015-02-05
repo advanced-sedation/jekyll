@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="banner">
+    <header><h1>The Doctor</h1></header>
+</section>
+<section class="main">
+    <main>
+        <img src="../img/{{ site.data.general.the_doctor.image.large }}" class="doctor-photo">
+        <h2>{{ site.data.general.the_doctor.name }}</h2>
+        {% for paragraph in site.data.general.the_doctor.about.long %}
+            <p>{{ paragraph }}</p>
+        {% endfor %}
+    </main>
+</section>
