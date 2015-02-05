@@ -1,0 +1,11 @@
+name: Advanced Dental Anesthesia Services
+street: "48 BiState Plaza, PMB #268"
+city: Old Tappan
+state: NJ
+zip: 07675
+phone_numbers:
+    - human: "(201) 660-7464"
+      machine: 2016607464
+    - human: "(917) 573-8855"
+      machine: 9175738855
+email_address: "info@advancedsedation.com"

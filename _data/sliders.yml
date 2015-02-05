@@ -1,0 +1,44 @@
+home:
+  - image:
+      name: slideshow1.png
+      alt: We care about every patient
+  - image:
+      name: slideshow2.png
+      alt: Dental care with a personal touch
+
+patients:
+  - image:
+      name: services1.jpg
+      alt: Patient gives blood
+    caption:
+        title: Oral Sedation
+        body: "Oral medications can be provided to patients who are anxious, but prefer
+              to remain in a more conscious state throughout the procedure. Oral medications will provide
+              patients with some relaxation, while still being able to respond to all commands and stimuli. Oral
+              sedation is not ideal for everyone as we are unable to titrate (re-dose) oral medications"
+  - image:
+      name: services2.jpg
+      alt: Surgeon examines monitor
+    caption:
+      title: IV Sedation
+      body: "Provides the ability to titrate intravenous medications to achieve levels of minimal, moderate
+             or deep sedation. Based on the patients medical history and the dental treatment plan, an
+             individual anesthetic plan (level of sedation) is established to provide a patient with a safe,
+             comfortable and pain-free visit at the dental office."
+  - image:
+      name: services3.jpg
+      alt: Child takes medicine
+    caption:
+      title: General Anesthesia
+      body: "Is administered through inhaled gas or through intravenous medications providing a patient to
+             an unconscious state. Through a cocktail of medications, the patient may require a supplemental
+             airway, however this is not a definitive measure as a patient undergoing general anesthesia may
+             still breath on their own."
+  - image:
+      name: services4.jpg
+      alt: Child receives nitrous oxide
+    caption:
+      title: Nitrous Oxide
+      body: "Also known as \"Laughing Gas\" is an inhalational agent mixed with oxygen to provide some comfort
+             during a dental procedure. It is not intended to put you to \"sleep\". You will be conscious and
+             will be able to hear and respond to any requests and stimuli."

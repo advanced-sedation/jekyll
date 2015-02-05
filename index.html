@@ -11,81 +11,69 @@ layout: default
             <p><i class="open-quote">&#8220;</i><q>{{ site.data.general.home_quote }}</q><i class="close-quote">&#8221;</i></p>
         </blockquote>
         <section class="about-the-doctor">
-            <aside>
-                <img src="img/mendia.jpg">
+            <article>
                 <h1>
-                    Dentist Anesthesiologist
-                    <small>Dr. Jonathan Mendia, Dentist Anesthesiologist</small>
+                    {{ site.data.general.headings.home.doctor }}
+                    <small>{{ site.data.general.the_doctor.name }}, {{ site.data.general.the_doctor.title }}</small>
                 </h1>
-                Dr. Mendia offers safe and comfortable anesthesia services in the comfort of your dental practice.
-                Dr. Mendia has completed post-doctoral training in dental anesthesiology which included both hospital
-                and private practice ambulatory anesthesia. Through his training, Dr. Mendia has dealt hands on with
-                emergency medicine, pediatrics, special needs, obstetrics, ENT, Oral and Maxillofacial surgery, as
-                well as acute and chronic pain management.  In addition to the clinical experiences, Dr. Mendia
-                attended lectures and seminars to further expand his academic knowledge of anesthesia and how to
-                customize a treatment plan of anesthesia for each individual patient. Dr. Mendia works in the
-                offices of various dentists or can be contacted to come to an office of your choice.
-            </aside>
+                <img src="img/{{ site.data.general.the_doctor.image.small }}"
+                     alt="{{ site.data.general.the_doctor.name }}">
+
+                <p>{{ site.data.general.the_doctor.about.short }}</p>
+            </article>
             <aside>
-                <img src="img/stethoscope.jpeg">
                 <h1>
-                    Ambulatory Anesthesia
+                    {{ site.data.general.headings.home.service }}
                     <small>
-                        Evaluation and treatment of the full range surgery problems
+                        {{ site.data.general.service_info.subtitle }}
                     </small>
                 </h1>
-                Dr. Mendia is trained and certified in ambulatory anesthesia. He works in both dental practices and
-                with Rutgers University School of Dental Medicine. When he works in a private Dental practice he
-                provides all the necessary equipment, medications, and the most up-to date monitors to ensure an
-                unsurpassed margin of safety in the care of the dental patient.
+                <img src="img/{{ site.data.general.service_info.image }}"
+                     alt="{{ site.data.general.headings.home.service }}">
+
+                <p>{{ site.data.general.service_info.description }}</p>
             </aside>
         </section>
         <hr>
         <section class="additional-info">
-            <div class="contact-info">
-                <h2>Contact Info</h2>
-                <address>
-                    Advanced Dental Anesthesia Services <br>
-                    48 BiState Plaza, PMB #268 <br>
-                    Old Tappan, NJ 07675 <br>
-                    <a href="tel:+12016607464">(201) 660-7464</a> <br>
-                    <a href="tel:+19175738855">(917) 573-8855</a> <br>
-                    <a href="mailto:info@advancedsedation.com">info@advancedsedation.com</a>
-                </address>
-            </div>
-            <div class="faq-info">
-                <h2>FAQ's</h2>
+            <article class="faq-info">
+                <h2>{{ site.data.general.headings.home.faq }}</h2>
                 <dl>
-                    <dt>What is a dentist anesthesiologist?</dt>
-                    <dl>A dentist anesthesiologist is a dentist that has completed a post-doctoral residency in anesthesiology.</dl>
-                    <dt>Why is anesthesia necessary?</dt>
-                    <dl>Complex Dental cases, needle phobic or anxious patients, patients with special needs and children may require anesthesia.</dl>
-                    <dt>What is a dentist anesthesiologist?</dt>
-                    <dl>A dentist anesthesiologist is a dentist that has completed a post-doctoral residency in anesthesiology.</dl>
-                    <dt>Who do I contact with a billing question?</dt>
-                    <dl>A dentist anesthesiologist is a dentist that has completed a post-doctoral residency in anesthesiology.</dl>
+                    {% assign questions = site.data.faq | where: "promoted", true %}
+                    {% for question in questions %}
+                        <dt>{{ question.question }}</dt>
+                        <dd>
+                            {{ question.answer }}
+                        </dd>
+                    {% endfor %}
                 </dl>
-            </div>
-            <div class="forms-info">
-                <h2>Forms</h2>
-                <ul>
-                    <li>
-                        <a href="/files/NewApptForm.pdf" target="_blank">New Appointment Form</a>
-                    </li>
-                    <li>
-                        <a href="/files/NewPatientForm.pdf.pdf" target="_blank">New Patient Form</a>
-                    </li>
-                    <li>
-                        <a href="/files/Consent-Form-ADAS.pdf.pdf" target="_blank">Consent Form</a>
-                    </li>
-                    <li>
-                        <a href="/files/Pre-Anesthesia-Instructions.pdf" target="_blank">Pre-Anesthesia Instructions</a>
-                    </li>
-                    <li>
-                        <a href="/files/Adult-Post-Op.pdf.pdf" target="_blank">Adult Post-Op</a>
-                    </li>
-                </ul>
-            </div>
+            </article>
+            <aside>
+                <div class="forms-info">
+                    <h2>{{ site.data.general.headings.home.forms }}</h2>
+                    <ul>
+                        {% for form in site.data.forms %}
+                            <li>
+                                <a href="/files/{{ form.file }}" target="_blank">{{ form.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <hr>
+                <div class="contact-info">
+                    <h2>{{ site.data.general.headings.home.contact }}</h2>
+                    <address>
+                        {{ site.data.contact.name }} <br>
+                        {{ site.data.contact.street }} <br>
+                        {{ site.data.contact.city }}, {{ site.data.contact.state }} {{ site.data.contact.zip }} <br>
+                        {% for number in site.data.contact.phone_numbers %}
+                            <a href="tel:+1{{ number.machine }}">{{ number.human }}</a> <br/>
+                        {% endfor %}
+
+                        <a href="mailto:{{ site.data.contact.email_address }}">{{ site.data.contact.email_address }}</a>
+                    </address>
+                </div>
+            </aside>
         </section>
     </main>
 </section>

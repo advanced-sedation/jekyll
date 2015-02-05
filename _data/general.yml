@@ -1,0 +1,87 @@
+headings:
+  home:
+    doctor: Dentist Anesthesiologist
+    service: Ambulatory Anesthesia
+    faq: Frequently Asked Questions
+    forms: Forms
+    contact: Contact Info
+  patients:
+    extra_care: With Care You Get More
+    patient_types: Individualized Treatment for Every Patient
+  payment:
+    main: Payment Options
+  faq:
+    main: Frequently Asked Questions
+
+extra_care:
+  - title: Pre-Operative Evaluation
+    body: "Before your scheduled appointment you will complete a questionnaire asking about you or your child’s
+    previous medical history, any current medical conditions, medications, allergies, and other health questions that
+    may have an impact on your anesthetic care. On the day of surgery Dr. Mendia will conduct a focused physical exam
+    followed by a thorough pre-anesthetic assessment."
+    image: extra-care1.jpg
+  - title: Monitoring & Safety
+    body: "During the procedure the patient will be continuously monitoring using State of the art monitoring
+    equipment which includes NIBP ( non-invasive blood pressure ), Pulse Oximeter (Oxygen saturation of blood), EKG
+    (Heart rhythm), Respiratory rate, Temperature, and End Tidal CO2 capnography. Dr. Mendia will be bedside monitoring
+    the patient throughout the procedure and will continue to monitor through recovery, up until the moment the patient
+    is able to go home. Emergency medical equipment equivalent to that carried by the E.M.S. (Emergency Medical System)
+    is brought to every dental office."
+    image: extra-care2.jpg
+  - title: Customized Anesthesia
+    body: "Each patient will receive an individual, customized anesthetic plan based on the information recorded
+    by Dr. Mendia during his focused physical exam and patient medical history provided by you, the patient. According
+    to the anesthetic plan, specific medications will be selected for safety, allowing the anesthesia to be specific to
+    the needs of each individual patient."
+    image: extra-care3.jpg
+
+home_quote: Providing customized anesthesia plans for patients and dental practitioners
+
+service_info:
+  subtitle: Evaluation and treatment of the full range surgery problems
+  description: "Dr. Mendia is trained and certified in ambulatory anesthesia. He works in both dental practices and with
+   Rutgers University School of Dental Medicine. When he works in a private Dental practice he provides all the
+   necessary equipment, medications, and the most up-to date monitors to ensure an unsurpassed margin of safety in the
+   care of the dental patient."
+  image: stethoscope.jpeg
+
+the_doctor:
+  name: Dr. Jonathan Mendia
+  title: Dentist Anesthesiologist
+  image:
+    large: dr-mendia.jpg
+    small: mendia.jpg
+  about:
+    short: "Dr. Mendia offers safe and comfortable anesthesia services in the comfort of your dental practice. Dr.
+    Mendia has completed post-doctoral training in dental anesthesiology which included both hospital and private
+    practice ambulatory anesthesia. Through his training, Dr. Mendia has dealt hands on with emergency medicine,
+    pediatrics, special needs, obstetrics, ENT, Oral and Maxillofacial surgery, as well as acute and chronic pain
+    management. In addition to the clinical experiences, Dr. Mendia attended lectures and seminars to further expand
+    his academic knowledge of anesthesia and how to customize a treatment plan of anesthesia for each individual
+    patient. Dr. Mendia works in the offices of various dentists or can be contacted to come to an office of your
+    choice."
+    long:
+      - "Owns and operates a private ambulatory anesthesia practice that offers dental patients anesthesia services,
+      which range from IV Sedation to General Anesthesia. Dr. Mendia will come to your office to safely sedate your
+      patients, providing a comfortable environment for both the patient and Dentist."
+      - "Dr. Jonathan Mendia, born and raised in Northern New Jersey, attended Rutgers University where he graduated
+      with a Bachelor’s degree in Exercise Science and Nutrition. He then earned his Doctorate of Dental Medicine from
+      the University of Pittsburgh School Of Medicine. After, Dr. Mendia completed a two-year post-doctoral residency in
+       Dental Anesthesiology at the University of Pittsburgh School of Dental Medicine in conjunction with the
+       University of Pittsburgh Medical Center (UPMC). There are only six Dental Anesthesiology programs of this kind in
+        the country that provide such vigorous training."
+      - "During his residency, Dr. Mendia successfully completed over 1,200 cases of hospital based general anesthesia
+      in the areas of dentistry, general surgery, otolaryngology (ENT) surgery and obstetrics. Dr. Mendia received
+      specialized training to provide all levels of anesthesia services to ambulatory patients, special needs patients,
+      pediatric patients, phobic patients, and geriatric patients for office-based anesthesia in a safe environment."
+      - "Today, Dr. Mendia has an ambulatory anesthesia practice serving Pennsylvania and New Jersey providing general
+      anesthesia and IV sedation services to pediatric patients, special needs patients, (anxious or dental phobic)
+      adults in both office and hospital settings. In addition, he is an Assistant Clinical Professor of Dental
+      Anesthesia at Rutgers University School of Dental Medicine. Dr. Mendia aims to minimize patients’ dental fears and
+       ensure that anxious children and adults feel more comfortable during their dental care."
+      - "Dr. Mendia also provides lectures and continuing education courses on sedation and medical emergencies in the
+      dental office. He holds certifications in Basic Life Support (BLS), Advanced Cardiac Life Support (ACLS), and
+      Pediatric Advanced Life Support (PALS). He is a member of the American Dental Society of Anesthesiology, New
+      Jersey Dental Association, and American Dental Association."
+      - "Dr. Mendia resides in Northern New Jersey with his wife. His personal interests include sporting events,
+      physical fitness and traveling."
