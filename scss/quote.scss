@@ -1,29 +1,52 @@
 blockquote {
   border: none;
   margin: 2em 0;
-  padding: 1em 0 0 1.5em;
+//  padding: 1em 0 0 1.5em;
   text-align: center;
+
+  i.open-quote {
+    float: left;
+    line-height: rem-calc(20px);
+    margin-right: rem-calc(24);
+//    left: rem-calc(-96);
+//    top: rem-calc(-48);
+  }
+  i.close-quote {
+    float: right;
+    line-height: rem-calc(90);
+    margin-left: rem-calc(24);
+    content: "\201D";
+
+    @include small-only {
+      margin-right: .875rem;
+      margin-top: -.875rem;
+    }
+//    right: rem-calc(-64);
+//    bottom: rem-calc(-64);
+  }
+  i.open-quote, i.close-quote {
+    display: inline-block;
+    font-size: rem-calc(60);
+    @include large-up {
+      padding: 0 rem-calc(24);
+    }
+  }
   q {
+    &::before {
+      content: none;
+    }
+    max-width: 75%;
+    margin: 0 auto;
+    display: block;
     position: relative;
-    &:before, &:after {
-      display: block;
-      color: #cccccc;
-      position: absolute;
-      font-size: rem-calc(60);
-    }
-    &:before {
-      padding-left: 10px;
-      content: "\201C";
-      left: rem-calc(-96);
-      top: rem-calc(-48);
-    }
-    &:after {
-      padding-right: 10px;
-      content: "\201D";
-      right: rem-calc(-64);
-      bottom: rem-calc(-64);
-    }
-    padding: 0 1.5em 1em 0;
+//    &:before, &:after {
+//      display: block;
+//      color: #cccccc;
+//      position: absolute;
+//      font-size: rem-calc(60);
+//    }
+//
+//    padding: 0 1.5em 1em 0;
     text-align: center;
     font-size: rem-calc(18);
     font-style: italic;
